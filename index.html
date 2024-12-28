@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Greeting</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f6d365 10%, #fda085 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            overflow: hidden;
+        }
+        .greeting {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: bounceIn 2s;
+        }
+        .greeting h1 {
+            color: #ff69b4;
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+            animation: sparkle 1.5s infinite;
+        }
+        .greeting p {
+            font-size: 1.5em;
+            color: #ff4500;
+            margin: 10px 0;
+        }
+        .greeting img {
+            width: 120px;
+            margin-top: 20px;
+        }
+        .heart {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 2em;
+            color: #ff1493;
+            animation: beat 1.5s infinite;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes sparkle {
+            0% { text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493, 0 0 15px #ff1493; }
+            50% { text-shadow: 0 0 10px #ff1493, 0 0 20px #ff1493, 0 0 30px #ff1493; }
+            100% { text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493, 0 0 15px #ff1493; }
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting">
+        <span class="heart">❤️</span>
+        <h1>Happy Birthday! 🎉🎂</h1>
+        <p>Wishing you a day filled with love, joy, and all your favorite things. 🎁🎈</p>
+        <img src="./th.jpeg" alt="Birthday Cake">
+    </div>
+</body>
+</html>
+
+
